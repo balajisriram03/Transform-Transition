@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color:black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  color:white;
+  text-align:center;
+  margin-top:20px;
+}
+
+.main {
+  width: 80%;
+  height: 800px;
+  margin: 100px auto;
+  text-align: center;
+  background-color:white;
+}
+
+.box {
+  width: 40%;
+  height: 300px;
+  display: inline-block;
+  border: 1px solid black;
+  margin-top: 60px;
+  margin-right: 30px;
+  position: relative;
+  vertical-align: middle;
+  overflow:hidden;
+  background-color: black;
+  perspective:800px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ 
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition:1s;
+
+}
+
+.content {
+  width:80%;
+  border:1px solid white;
+  margin:80px auto;
+  padding:20px;
+  font-size:20px;
+  color:white;
+  transition:1s 0.2s;
+}
+
+.img1 {
+  background-image: url("https://wallpaperaccess.com/full/86938.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+    transform-origin:bottom;
+}
+
+.box1:hover .img1 {
+  transform: rotatex(120deg);
+}
+.box1:hover .content1{
+  transform:rotatex(0deg);
+  margin:80px auto;
+}
+.content1{
+  transform:rotatex(180deg);
+  transform-origin:top;
+  margin:0 auto;
+  text-align:center;
+}
+.img2{
+  background-image: url("https://wallpaperaccess.com/full/212200.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform-origin:left;
+}
+.box2:hover .img2{
+  transform:rotatey(120deg);
+}
+.content2{
+  transform:rotatey(-180deg);
+  transform-origin:right;
+  margin-right:0;
+}
+.box2:hover .content2{
+   transform:rotatex(0deg);
+  margin-right:60px;
+}
+.img3{
+  background-image: url("https://wallpaperaccess.com/full/310075.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform:scale(1);
+  transform-origin:bottom left;
+}
+.content3{
+  transform:scale(0);
+  transform-origin:top right;
+}
+
+.box3:hover .img3{
+  transform:scale(0);
+}
+.box3:hover .content3{
+  transform:scale(1);
+}
+
+.img4{
+  background-image: url("https://wallpaperaccess.com/full/8859.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform:scaleX(1);
+  transform-origin:left;
+}
+.content4{
+  transform:scaleX(0);
+  transform-origin:right;
+}
+.box4:hover .img4{
+  transform:scaleX(0);
+}
+.box4:hover .content4{
+  transform:scaleX(1);
+}
